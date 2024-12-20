@@ -1,22 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { BrowserRouter } from 'react-router-dom'
-
+import Navbar from './components/Navbar'
+import HeroSection from './components/HeroSection'
+import CircleAnimation from './animations/CircleAnimation'
+import Background from './animations/Background.jsx'
+import Instructor from './components/Instructor'
+import DSASection from './components/DSASection'
+import Testimonials from './components/Testimonials'
+import SubFooter from './components/SubFooter'
+import Footer from './components/Footer'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <Background />
+      <CircleAnimation />
 
-      </div>
-    </>
-  )
+      <div className="relative z-10">
+        <Navbar />
+        <div className="max-w-7xl mx-auto pt-15 px-6">
+
+          <HeroSection />
+          <Instructor />
+          <DSASection />
+          <Testimonials />
+          <SubFooter />
+          <Footer />
+        </div>
+
+      </div >
+
+
+      </>
+      )
 }
 
-export default App
+      export default App

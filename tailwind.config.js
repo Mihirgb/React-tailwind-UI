@@ -10,6 +10,16 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        'left-right': 'leftRight 1s ease-in-out infinite',
+      },
+      keyframes: {
+        leftRight: {
+          '0%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(10px)' }, // Moves the arrow to the right by 10px
+          '100%': { transform: 'translateX(0)' }, // Arrow moves back to its original position
+        },
+      },
       colors: {
         color: {
           1: "#AC6AFF",
@@ -84,6 +94,8 @@ export default {
     },
   },
   plugins: [
+    require("tw-elements/plugin.cjs"),
+    require('daisyui'),
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({});
       addComponents({

@@ -44,7 +44,7 @@ const HeroSection = () => {
 
                 </div>
                 <div className='pl-6 w-full lg:w-1/2 flex justify-center'>
-                    <iframe className='rounded-lg max-w-4xl shadow-md rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_rgba(59,130,246,0.8)] hover:scale-105' width="500" height="280" src="https://www.youtube.com/embed/r7H7G1AgVVo?si=WNKCwv9j0g9fxD6x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe className='shadow-[0_0_30px_blue] rounded-lg max-w-4xl shadow-lg transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_rgba(59,130,246,0.8)] hover:scale-105' width="500" height="280" src="https://www.youtube.com/embed/r7H7G1AgVVo?si=WNKCwv9j0g9fxD6x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
 

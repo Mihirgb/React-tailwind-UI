@@ -5,8 +5,8 @@ const DSASection = () => {
     return (
         <div className="mt-[14rem]">
             <div className="flex flex-wrap justify-center">
-                <div className='p-2 w-full lg:w-1/2 flex justify-center'>
-                    <img src={dsaflowchat} alt="" />
+                <div className='p-2 w-full lg:w-1/2 flex justify-center  '>
+                    <img src={dsaflowchat} className='rounded-lg shadow-[0_0_15px_blue] hover:shadow-[0_0_40px_blue]' alt="" />
                 </div>
                 <div className="p-[2.5rem] w-full lg:w-1/2 ">
                     <h2 className="text-3xl sm:text-5xl lg:text-6xl text-left mt-6 tracking-wide">

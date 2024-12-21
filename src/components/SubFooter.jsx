@@ -11,7 +11,7 @@ const CountUp = ({ targetNumber, duration }) => {
 
   useEffect(() => {
     let startNumber = 0;
-    const increment = targetNumber / (duration / 16); // Assuming 60fps, 16ms per frame
+    const increment = targetNumber / (duration / 16);
 
     const updateCount = () => {
       startNumber += increment;
@@ -19,7 +19,7 @@ const CountUp = ({ targetNumber, duration }) => {
         setCount(Math.floor(startNumber));
         requestAnimationFrame(updateCount);
       } else {
-        setCount(targetNumber); // Ensure the final value is exact
+        setCount(targetNumber); 
       }
     };
 
@@ -96,7 +96,7 @@ const SubFooter = () => {
         <button
           ref={instagramRef}
           onClick={() => window.open('https://www.instagram.com', '_blank')}
-          className="w-60 h-60 border border-gray-300 flex flex-col items-center justify-center gap-y-2 mr-4 text-white rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_rgba(59,130,246,0.8)] hover:scale-105"
+          className=" w-60 h-60 border border-gray-300 flex flex-col items-center justify-center gap-y-2 mr-4 text-white rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_rgba(59,130,246,0.8)] hover:scale-105"
         >
           <span className="flex tabular-nums text-slate-900 text-5xl font-extrabold mb-2">
             {instagramInView && <CountUp targetNumber={400} duration={2000} />}

@@ -12,12 +12,20 @@ export default {
     extend: {
       animation: {
         'left-right': 'leftRight 1s ease-in-out infinite',
+        borderTravel: "borderTravel 2s linear infinite",
       },
       keyframes: {
         leftRight: {
           '0%': { transform: 'translateX(0)' },
           '50%': { transform: 'translateX(10px)' }, // Moves the arrow to the right by 10px
           '100%': { transform: 'translateX(0)' }, // Arrow moves back to its original position
+        },
+        borderTravel: {
+          "0%": { "border-color": "transparent", "border-width": "2px" },
+          "25%": { "border-color": "blue", "border-width": "2px 2px 0 0" },
+          "50%": { "border-color": "blue", "border-width": "2px 2px 2px 0" },
+          "75%": { "border-color": "blue", "border-width": "2px 2px 2px 2px" },
+          "100%": { "border-color": "blue", "border-width": "2px" },
         },
       },
       colors: {

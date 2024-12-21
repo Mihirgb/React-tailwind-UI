@@ -4,7 +4,7 @@ import { navItems } from '../constants'
 
 const Navbar = () => {
     return (
-        <nav className="sticky top-0 z-50 py-3 bg-blue-950 border-b border-neutral-700/80">
+        <nav className="sticky top-0 z-50 py-3 bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] border-b border-neutral-700/80">
             <div className="container px-4 mx-auto relative lg:text-sm">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center flex-shrink-0">
